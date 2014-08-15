@@ -1,0 +1,21 @@
+opam-version: "1"
+maintainer: "dario.teixeira@yahoo.com"
+build: [
+  ["./configure" "--prefix" prefix "--docdir" "%{doc}%/camlhighlight"]
+  [make]
+  [make "doc"]
+  [make "install"]
+]
+remove: [["ocamlfind" "remove" "camlhighlight"]]
+depends: [
+  "ocamlfind"
+  "batteries" {>= "2"}
+  "sexplib"
+  "tyxml" {>= "3.2"}
+]
+depexts: [
+  [["debian"] ["libsource-highlight-dev"]]
+  [["ubuntu"] ["libsource-highlight-dev"]]
+]
+post-messages: ["To complete installation, copy sexp.outlang to /usr/share/source-highlight" {success}]
+

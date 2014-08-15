@@ -1,0 +1,26 @@
+opam-version: "1"
+maintainer: "dario.teixeira@yahoo.com"
+ocaml-version: [>= "4.01.0"]
+build: [
+  [make]
+  [make "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "lambdoc"]
+]
+depends: [
+  "ocamlfind"
+  "camlp4"
+  "batteries" {>= "2"}
+  "menhir"
+  "sexplib"
+  "pcre-ocaml"
+  "pxp"
+  "lwt"
+  "tyxml" {>= "3.2"}
+  "blahcaml"
+  "camlhighlight" {> "3.0"}
+  "bookaml"
+  "omd"
+]
+
