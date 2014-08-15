@@ -20,4 +20,4 @@ depexts: [
   [["debian"] ["libsource-highlight-dev"]]
   [["ubuntu"] ["libsource-highlight-dev"]]
 ]
-
+patches: ["sexp-dir.patch"]
