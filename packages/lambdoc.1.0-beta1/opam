@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "dario.teixeira@nleyten.com"
 authors: ["Dario Teixeira <dario.teixeira@nleyten.com>"]
-homepage: "http://camlhighlight.forge.ocamlcore.org/"
+homepage: "http://lambdoc.forge.ocamlcore.org/"
 license: "GPL-2.0"
 ocaml-version: [>= "4.01.0"]
 build: [
@@ -16,14 +16,16 @@ depends: [
   "camlp4"
   "batteries" {>= "2"}
   "menhir"
+  "ulex"
   "sexplib"
   "pcre-ocaml"
   "pxp"
-  "lwt"
+  "xstrp4"
   "tyxml" {>= "3.2"}
+  "omd"
   "blahcaml"
   "camlhighlight" {> "3.0"}
   "bookaml"
-  "omd"
+  "lwt"
 ]
 
