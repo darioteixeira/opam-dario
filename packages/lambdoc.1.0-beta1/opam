@@ -24,7 +24,7 @@ depends: [
   "tyxml" {>= "3.2"}
   "omd"
   "blahcaml"
-  "camlhighlight" {> "3.0"}
+  "camlhighlight" {>= "3.0"}
   "bookaml"
   "lwt"
 ]
