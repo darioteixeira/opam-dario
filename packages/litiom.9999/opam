@@ -12,5 +12,5 @@ build: [
 remove: [["ocamlfind" "remove" "litiom"]]
 depends: [
   "ocamlfind"
-  "eliom" {>= "9999"}
+  "eliom" {>= "4.1"}
 ]
